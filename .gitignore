@@ -1,0 +1,22 @@
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Qdrant database
+qdrant_storage/
+
+# Uploaded documents
+uploads/
+
+# Mac
+.DS_Store
+
+# IDE
+.vscode/

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is an LLM?",
+        "ground_truth": "A large language model is a Transformer-based neural network trained on massive text corpora to predict the next token in a sequence. Through this process, it acquires the ability to understand, generate, and reason with human language."
+    },
+    {
+        "question": "What makes an LLM large?",
+        "ground_truth": "An LLM is considered large based on the number of parameters it contains, the amount of data it has been trained on, and the compute used to train it."
+    },
+    {
+        "question": "What are the four stages of training an LLM from scratch?",
+        "ground_truth": "The four stages are pre-training, instruction fine-tuning, preference fine-tuning, and reasoning fine-tuning. The process starts with a randomly initialized model, followed by pre-training on large-scale corpora, instruction fine-tuning to make it follow commands, and preference and reasoning fine-tuning to improve its responses."
+    },
+    {
+        "question": "What is the role of temperature in LLM text generation?",
+        "ground_truth": "Temperature influences the sampling process. At low temperature, probabilities concentrate around the most likely token, resulting in nearly greedy generation. At high temperature, probabilities become more uniform, producing more random and stochastic outputs."
+    },
+    {
+        "question": "What is prompt engineering?",
+        "ground_truth": "Prompt engineering is the process of controlling an LLM by changing its instructions rather than changing the model's learned weights. A good prompt can help the model think step-by-step, follow constraints, stay focused, and avoid shallow answers."
+    },
+    {
+        "question": "What is LoRA and how does it work?",
+        "ground_truth": "LoRA is a parameter-efficient fine-tuning technique in which the original model weights are frozen and the weight update is represented using two smaller low-rank matrices A and B. Matrix A has dimensions d × r and matrix B has dimensions r × k, so their product produces a d × k update. During training, only A and B are trained while the original model weights remain fixed."
+    },
+    {
+        "question": "What is RAG?",
+        "ground_truth": "RAG stands for Retrieval-Augmented Generation. It combines information retrieval with language model generation by retrieving relevant information and providing it to the language model as context for generating an answer."
+    },
+    {
+        "question": "What is the purpose of a vector database in a RAG system?",
+        "ground_truth": "A vector database is used in RAG to store and search vector representations of information. It enables the system to retrieve chunks that are semantically relevant to a user's query, which can then be provided to the language model as context."
+    },
+    {
+        "question": "What is the difference between RAG and Agentic RAG?",
+        "ground_truth": "Traditional RAG retrieves relevant information and uses it as context for generation, while Agentic RAG introduces agent-like behavior so the system can perform more dynamic retrieval and reasoning rather than following only a fixed retrieval pipeline."
+    },
+    {
+        "question": "What is an AI Agent?",
+        "ground_truth": "An AI Agent is a system designed to use an LLM together with components such as tools, memory, and other capabilities to perform tasks and make decisions rather than simply generating a response to a single prompt."
+    }
+]
